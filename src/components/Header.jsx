@@ -6,6 +6,7 @@ import Select from "react-select";
 import { RiCloseLine } from "react-icons/ri";
 import { SlMenu } from "react-icons/sl";
 import logo from "../assets/imgs/logo.png";
+import { CiSearch } from "react-icons/ci";
 import "../assets/css/style.css";
 
 function Header() {
@@ -102,7 +103,7 @@ function Header() {
           <Select options={options}
                   styles={colourStyles}
                   className="text-[14px] sm:text-[16px]"
-                  placeholder={<div>Destination</div>}/>
+                  placeholder={<div className="flex items-center gap-2"><CiSearch /> Destination</div>}/>
         </div>
 
         <div className={`1097:hidden ${menuOpen ? 'hidden' : 'block'}`} onClick={handleMenu}>
