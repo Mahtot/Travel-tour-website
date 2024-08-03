@@ -1,0 +1,32 @@
+
+    @font-face {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype'); 
+    }
+  
+    @font-face {
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('../fonts/Outfit/outfit.ttf') format('truetype'); 
+    }
+  
+
+
+.header-link a:hover{
+   scale: 1.1;
+   transition: all 0.5s;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.css-1xc3v61-indicatorContainer{
+    display: none !important;
+}
