@@ -79,6 +79,8 @@
     "id": 7,
     "name": "Bahir Dar and Blue Nile Falls Tour",
     "days": "two days tour",
+    "type": "historical",
+
     "price": "10,000 birr",
     "description": "Witness the beauty of Lake Tana and the Blue Nile Falls.",
     "imgUrl": "../public/imgs/tana.png"
@@ -86,6 +88,8 @@
   {
     "id": 8,
     "name": "Bahir Dar and Blue Nile Falls Tour",
+    "type": "historical",
+
     "days": "a week tour",
     "price": "18,000 birr",
     "description": "Witness the beauty of Lake Tana and the Blue Nile Falls.",
@@ -104,14 +108,18 @@
   },
   {
     "id": 10,
-    "name": "Axum zion church Tour",
+    "name": "Tigray Historial Places Tour",
     "days": "a two days tour",
     "price": "18,000 birr",
     "type": "religious",
 
-    "description": "axum.jpg",
-    "imgUrl": "../public/imgs/axum2.png",
-    "more": ["../public/imgs/axum.png", "../public/imgs/axum1.png"]
+    "description": " /Axum zion church,the Church of Our Lady, Mary of Zion is an Ethiopian Orthodox Tewahedo Church which is claimed to contain the Ark of the Covenant",
+    "imgUrl": "../public/imgs/axum2.png ",
+    "more": [
+      "../public/imgs/axum2.png",
+      "../public/imgs/axum.jpg",
+      "../public/imgs/axum1.jpg"
+    ]
   },
   {
     "id": 11,
@@ -157,6 +165,7 @@
     "days": "a 2 days tour",
     "price": "10,000 birr",
     "more": [
+      "../public/imgs/gerialita.jpeg",
       "../public/imgs/The Ultimate Ethiopia Tour_ Suggested List Of Top Things To Do In Ethiopia _ Drink Tea & Travel.jpeg"
     ]
   }

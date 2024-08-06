@@ -104,7 +104,7 @@ img{
   border: 0px !important;
 }
 
-a,img, button.rounded,.book {
+a,img, button.rounded,.book, .submit {
   transition: all 0.5s;
 }
 
@@ -150,11 +150,31 @@ a,img, button.rounded,.book {
 }
 
 
-h1.congraMsg, p{
+h1.congraMsg{
   font-family: cursive;
 }
 
-.congraSection p{
+.congraSection p,p.caption{
   font-family: Georgia, 'Times New Roman', Times, serif;
 
+}
+
+.partners img{
+/* scale: 1.5; */
+width:190px;
+}
+
+.partners img:hover{
+  scale: 1.1;
+  
+  }
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

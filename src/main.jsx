@@ -12,6 +12,7 @@ import About from './pages/About.jsx'
 import Detail from './pages/Detail.jsx'
 import {ApiProvider} from './context/ApiContext.jsx';
 import Book from './pages/Book.jsx'
+import Search from './pages/Search.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -22,10 +23,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/tour-packages" element={<TourPackages/>} />
-        <Route path="/about" element={<About/>} />
+        {/* <Route path="/about" element={<About/>} /> */}
         <Route path="/account" element={<Account/>} />
         <Route path="/view-details" element={<Detail/>}/>
         <Route path="/book-package" element={<Book/>}/>
+        <Route path='/search' element={<Search/>} />
       </Routes>
     </ApiProvider>
   </BrowserRouter>,

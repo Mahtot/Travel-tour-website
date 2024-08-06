@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { NavLink,  useLocation } from "react-router-dom";
+import { NavLink,  useLocation, useNavigate } from "react-router-dom";
 import Select from "react-select";
 import { RiCloseLine } from "react-icons/ri";
 import { SlMenu } from "react-icons/sl";
@@ -12,30 +12,28 @@ import "../assets/css/style.css";
 function Header() {
   const menuItems = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Tour Packages", path: "/tour-packages" },
-    { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
+    { name: "Tour Packages", path: "/tour-packages" },
     { name: "Account", path: "/account" },
   ];
 
   const options = [
-    { value: "Addis Ababa", label: "Addis Ababa" },
-    { value: "Mekelle", label: "Mekelle" },
-    { value: "Tirgay", label: "Dire Dawa" },
-    { value: "Adama", label: "Adama" },
-    { value: "Bahir Dar", label: "Bahir Dar" },
-    { value: "Gondar", label: "Gondar" },
-    { value: "Hawassa", label: "Hawassa" },
+    { value: "Addis Ababa City Tour", label: "Addis Ababa City Tour" },
+    { value: "Tigray Historial Places Tour", label: "Tigray Historial Places Tour" },
+    { value: "Adama City Tour", label: "Adama City Tour" },
+    { value: "religious", label: "Religious tour" },
+    { value: "historical", label: "Historical tour" },
+    
   ];
 
   const [menuOpen, setIsMenuOpen] = useState(false);
-  const [selectedCity, setCity] = useState('');
+  const [selectedPackage, setSelectedPackage] = useState('');
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigateTo = useNavigate(); // Initialize navigate
 
 // To check is tour-packages is active 
   function isTourPackagesActive(pathname) {
-    return pathname.startsWith('/tour-packages') || pathname === '/view-details' || pathname === '/book-package';
+    return pathname.startsWith('/tour-packages') || pathname === '/view-details' || pathname === '/book-package' ||pathname === '/search';
   }
 
   
@@ -73,8 +71,10 @@ function Header() {
     setIsMenuOpen((prevState) => !prevState);
   };
 
-  const handleCityChange = (option) => {
-    setCity(option.value);
+  const handleTourChange = (option) => {
+    setSelectedPackage(option.value);
+    navigateTo(`/search?tour=${option.value}`);
+
   };
 
   // outside click will close the sidebar in mobile screens
@@ -130,16 +130,20 @@ function Header() {
         }`}
       >
         <div className="w-[100px] 344:w-[120px] 785:w-[250px] flex 785:top-[-10px] relative 785:mr-10">
+         <NavLink to="/">
           <img src={logo} alt="Logo" className="" />
+         </NavLink>
+         
         </div>
         <div className="w-[30vw] flex-1 p-3">
           <Select
             options={options}
             styles={colourStyles}
-            value={selectedCity}
-            onChange={handleCityChange}
+            value={selectedPackage.label}
+            onChange={handleTourChange}
             className="text-[14px] sm:text-[16px]"
-            placeholder={<div className="flex items-center gap-2"><CiSearch /> Destination</div>}
+            // placeholder={<div className="flex items-center gap-2"><CiSearch /> Destination</div>}
+          
           />
         </div>
 
