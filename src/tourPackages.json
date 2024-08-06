@@ -1,0 +1,163 @@
+[
+  {
+    "id": 1,
+    "name": "Addis Ababa City Tour",
+    "type": "city tour",
+    "description": "Explore the vibrant capital city known for its rich culture, history, and amazing food.",
+    "days": "3 days tour",
+    "price": "20,000 birr",
+    "imgUrl": "../public/imgs/sheger.jpeg",
+    "more": [
+      "../public/imgs/sheger.jpeg",
+      "../public/imgs/sheger2.jpeg",
+      "../public/imgs/shegr1.jpeg",
+      "../public/imgs/sheger3.jpeg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Addis Ababa City Tour",
+    "type": "city tour",
+
+    "days": "a week tour",
+    "price": "30,000 birr",
+    "description": "Explore the vibrant capital city known for its rich culture, history, and amazing food.",
+    "imgUrl": "../public/imgs/sheger2.jpeg",
+    "more": [
+      "../public/imgs/sheger.jpeg",
+      "../public/imgs/sheger2.jpeg",
+      "../public/imgs/shegr1.jpeg",
+      "../public/imgs/sheger3.jpeg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Addis Ababa City Tour",
+    "type": "city tour",
+    "price": "20,000 birr",
+    "days": "21 days tour, with a 2 days free travel to Adama",
+    "description": "Explore the vibrant capital city known for its rich culture, history, and amazing food.",
+    "imgUrl": "../public/imgs/shegr1.jpeg",
+    "more": [
+      "../public/imgs/sheger.jpeg",
+      "../public/imgs/sheger2.jpeg",
+      "../public/imgs/shegr1.jpeg",
+      "../public/imgs/sheger3.jpeg"
+    ]
+  },
+
+  {
+    "id": 4,
+    "name": "Lalibela Historical Tour",
+    "type": "religious",
+    "days": "3 days tour",
+    "price": "20,000 birr",
+    "description": "Visit the famous rock-hewn churches, a UNESCO World Heritage site.",
+    "imgUrl": "../public/imgs/lalibela.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Lalibela Historical Tour",
+    "type": "historical",
+    "days": "one day tour",
+    "price": "8,000 birr",
+    "description": "Visit the famous rock-hewn churches, a UNESCO World Heritage site.",
+    "imgUrl": "../public/imgs/lalibela.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Gondar Castle Tour",
+    "days": "one day tour",
+    "type": "historical",
+
+    "price": "7,000 birr",
+    "description": "Discover the historic castles and churches that reflect Ethiopia's ancient heritage.",
+    "imgUrl": "../public/imgs/lalibela1.jpeg"
+  },
+
+  {
+    "id": 7,
+    "name": "Bahir Dar and Blue Nile Falls Tour",
+    "days": "two days tour",
+    "price": "10,000 birr",
+    "description": "Witness the beauty of Lake Tana and the Blue Nile Falls.",
+    "imgUrl": "../public/imgs/tana.png"
+  },
+  {
+    "id": 8,
+    "name": "Bahir Dar and Blue Nile Falls Tour",
+    "days": "a week tour",
+    "price": "18,000 birr",
+    "description": "Witness the beauty of Lake Tana and the Blue Nile Falls.",
+    "imgUrl": "../public/imgs/bahirdar.png"
+  },
+  {
+    "id": 9,
+    "name": "Tigray Historial Places Tour",
+    "type": "historical",
+
+    "days": "two weeks tour",
+    "price": "28,000 birr",
+    "description": "Explore all the religious and historial places in tigray",
+    "more": "The churches were built in 4th century",
+    "imgUrl": "../public/imgs/trgay-hewnChurch.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Axum zion church Tour",
+    "days": "a two days tour",
+    "price": "18,000 birr",
+    "type": "religious",
+
+    "description": "axum.jpg",
+    "imgUrl": "../public/imgs/axum2.png",
+    "more": ["../public/imgs/axum.png", "../public/imgs/axum1.png"]
+  },
+  {
+    "id": 11,
+    "name": "Adama City Tour",
+    "type": "city tour",
+    "days": "a week tour",
+    "price": "13,000 birr",
+    "description": "Witness the beauty of Adama",
+    "imgUrl": "../public/imgs/adama.png"
+  },
+  {
+    "id": 12,
+    "name": "Adama City Tour",
+    "days": "a 4 days tour",
+    "type": "city tour",
+    "price": "14,000 birr",
+    "description": "Witness the beauty of Adama and calm your soul with the most beautiful resort",
+    "imgUrl": "../public/imgs/adama1.png"
+  },
+  {
+    "id": 13,
+    "name": "Omo Valley Cultural Tour",
+    "type": "historical",
+
+    "description": "Experience the diverse cultures and tribes of the Omo Valley.",
+    "imgUrl": "../public/imgs/omo.png",
+    "days": "a 2 days tour",
+    "price": "10,000 birr",
+    "more": [
+      "../public/imgs/omo1.png",
+      "../public/imgs/omo2.png",
+      "../public/imgs/omo3.png"
+    ]
+  },
+
+  {
+    "id": 14,
+    "name": "Abune-yemaeta church Tour",
+    "type": "religious",
+
+    "description": "An amazing church, found in gerialita Tigray",
+    "imgUrl": "../public/imgs/gerialita.jpeg",
+    "days": "a 2 days tour",
+    "price": "10,000 birr",
+    "more": [
+      "../public/imgs/The Ultimate Ethiopia Tour_ Suggested List Of Top Things To Do In Ethiopia _ Drink Tea & Travel.jpeg"
+    ]
+  }
+]

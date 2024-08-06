@@ -34,6 +34,8 @@ export default {
       transitionDuration: {
         '200s': '200s', 
       },
+     
+
     },
   },
   plugins: [],
