@@ -6,12 +6,12 @@
     "description": "Explore the vibrant capital city known for its rich culture, history, and amazing food.",
     "days": "3 days tour",
     "price": "20,000 birr",
-    "imgUrl": "../public/imgs/sheger.jpeg",
+    "imgUrl": "/imgs/sheger.jpeg",
     "more": [
-      "../public/imgs/sheger.jpeg",
-      "../public/imgs/sheger2.jpeg",
-      "../public/imgs/shegr1.jpeg",
-      "../public/imgs/sheger3.jpeg"
+      "/imgs/sheger.jpeg",
+      "/imgs/sheger2.jpeg",
+      "/imgs/shegr1.jpeg",
+      "/imgs/sheger3.jpeg"
     ]
   },
   {
@@ -22,12 +22,12 @@
     "days": "a week tour",
     "price": "30,000 birr",
     "description": "Explore the vibrant capital city known for its rich culture, history, and amazing food.",
-    "imgUrl": "../public/imgs/sheger2.jpeg",
+    "imgUrl": "/imgs/sheger2.jpeg",
     "more": [
-      "../public/imgs/sheger.jpeg",
-      "../public/imgs/sheger2.jpeg",
-      "../public/imgs/shegr1.jpeg",
-      "../public/imgs/sheger3.jpeg"
+      "/imgs/sheger.jpeg",
+      "/imgs/sheger2.jpeg",
+      "/imgs/shegr1.jpeg",
+      "/imgs/sheger3.jpeg"
     ]
   },
   {
@@ -37,12 +37,12 @@
     "price": "20,000 birr",
     "days": "21 days tour, with a 2 days free travel to Adama",
     "description": "Explore the vibrant capital city known for its rich culture, history, and amazing food.",
-    "imgUrl": "../public/imgs/shegr1.jpeg",
+    "imgUrl": "/imgs/shegr1.jpeg",
     "more": [
-      "../public/imgs/sheger.jpeg",
-      "../public/imgs/sheger2.jpeg",
-      "../public/imgs/shegr1.jpeg",
-      "../public/imgs/sheger3.jpeg"
+      "/imgs/sheger.jpeg",
+      "/imgs/sheger2.jpeg",
+      "/imgs/shegr1.jpeg",
+      "/imgs/sheger3.jpeg"
     ]
   },
 
@@ -53,7 +53,7 @@
     "days": "3 days tour",
     "price": "20,000 birr",
     "description": "Visit the famous rock-hewn churches, a UNESCO World Heritage site.",
-    "imgUrl": "../public/imgs/lalibela.jpeg"
+    "imgUrl": "/imgs/lalibela.jpeg"
   },
   {
     "id": 5,
@@ -62,7 +62,7 @@
     "days": "one day tour",
     "price": "8,000 birr",
     "description": "Visit the famous rock-hewn churches, a UNESCO World Heritage site.",
-    "imgUrl": "../public/imgs/lalibela.jpeg"
+    "imgUrl": "/imgs/lalibela.jpeg"
   },
   {
     "id": 6,
@@ -72,7 +72,7 @@
 
     "price": "7,000 birr",
     "description": "Discover the historic castles and churches that reflect Ethiopia's ancient heritage.",
-    "imgUrl": "../public/imgs/lalibela1.jpeg"
+    "imgUrl": "/imgs/lalibela1.jpeg"
   },
 
   {
@@ -83,7 +83,7 @@
 
     "price": "10,000 birr",
     "description": "Witness the beauty of Lake Tana and the Blue Nile Falls.",
-    "imgUrl": "../public/imgs/tana.png"
+    "imgUrl": "/imgs/tana.png"
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "days": "a week tour",
     "price": "18,000 birr",
     "description": "Witness the beauty of Lake Tana and the Blue Nile Falls.",
-    "imgUrl": "../public/imgs/bahirdar.png"
+    "imgUrl": "/imgs/bahirdar.png"
   },
   {
     "id": 9,
@@ -104,7 +104,7 @@
     "price": "28,000 birr",
     "description": "Explore all the religious and historial places in tigray",
     "more": "The churches were built in 4th century",
-    "imgUrl": "../public/imgs/trgay-hewnChurch.jpeg"
+    "imgUrl": "/imgs/trgay-hewnChurch.jpeg"
   },
   {
     "id": 10,
@@ -114,12 +114,8 @@
     "type": "religious",
 
     "description": " /Axum zion church,the Church of Our Lady, Mary of Zion is an Ethiopian Orthodox Tewahedo Church which is claimed to contain the Ark of the Covenant",
-    "imgUrl": "../public/imgs/axum2.png ",
-    "more": [
-      "../public/imgs/axum2.png",
-      "../public/imgs/axum.jpg",
-      "../public/imgs/axum1.jpg"
-    ]
+    "imgUrl": "/imgs/axum2.png ",
+    "more": ["/imgs/axum2.png", "/imgs/axum.jpg", "/imgs/axum1.jpg"]
   },
   {
     "id": 11,
@@ -128,7 +124,7 @@
     "days": "a week tour",
     "price": "13,000 birr",
     "description": "Witness the beauty of Adama",
-    "imgUrl": "../public/imgs/adama.png"
+    "imgUrl": "/imgs/adama.png"
   },
   {
     "id": 12,
@@ -137,7 +133,7 @@
     "type": "city tour",
     "price": "14,000 birr",
     "description": "Witness the beauty of Adama and calm your soul with the most beautiful resort",
-    "imgUrl": "../public/imgs/adama1.png"
+    "imgUrl": "/imgs/adama1.png"
   },
   {
     "id": 13,
@@ -145,14 +141,10 @@
     "type": "historical",
 
     "description": "Experience the diverse cultures and tribes of the Omo Valley.",
-    "imgUrl": "../public/imgs/omo.png",
+    "imgUrl": "/imgs/omo.png",
     "days": "a 2 days tour",
     "price": "10,000 birr",
-    "more": [
-      "../public/imgs/omo1.png",
-      "../public/imgs/omo2.png",
-      "../public/imgs/omo3.png"
-    ]
+    "more": ["/imgs/omo1.png", "/imgs/omo2.png", "/imgs/omo3.png"]
   },
 
   {
@@ -161,12 +153,12 @@
     "type": "religious",
 
     "description": "An amazing church, found in gerialita Tigray",
-    "imgUrl": "../public/imgs/gerialita.jpeg",
+    "imgUrl": "/imgs/gerialita.jpeg",
     "days": "a 2 days tour",
     "price": "10,000 birr",
     "more": [
-      "../public/imgs/gerialita.jpeg",
-      "../public/imgs/The Ultimate Ethiopia Tour_ Suggested List Of Top Things To Do In Ethiopia _ Drink Tea & Travel.jpeg"
+      "/imgs/gerialita.jpeg",
+      "/imgs/The Ultimate Ethiopia Tour_ Suggested List Of Top Things To Do In Ethiopia _ Drink Tea & Travel.jpeg"
     ]
   }
 ]
