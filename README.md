@@ -5,29 +5,29 @@ This project is an Ethiopian Travel and Tour website built with React vite and T
 
 ## Features
 User authentication (sign up, sign in)<br>
-Browse and book Ethiopian tour packages
-Search functionality for Ethiopian tour packages
-Save favorite packages
-Similar packages section (based on the users search info)
+Browse and book Ethiopian tour packages<br>
+Search functionality for Ethiopian tour packages<br>
+Save favorite packages<br>
+Similar packages section (based on the users search info)<br>
 
 ## Technologies Used
-React
-Tailwind CSS
-vanilla css
+React<br>
+Tailwind CSS<br>
+vanilla css<br>
 
 ## Installation
 ### Prerequisites
-Node.js
-npm (Node Package Manager)
-Git
+Node.js<br>
+npm (Node Package Manager)<br>
+Git<br>
 Clone the repository:
-git clone https://github.com/Mahtot/Travel-tour-website.git
+git clone https://github.com/Mahtot/Travel-tour-website.git<br>
 
-Navigate to the project directory:
+Navigate to the project directory:<br>
 bash
 Copy code
-cd Travel-tour-website
-Install dependencies:
+cd Travel-tour-website<br>
+Install dependencies:<br>
 
 bash
 Copy code
@@ -38,10 +38,10 @@ Start the development server:
 bash
 Copy code
 npm run dev
-Open your browser and navigate to:
+Open your browser and navigate to:<br>
 http://localhost:3000
 
-
+You are good to go now(:
 
 
 
