@@ -21,9 +21,8 @@ Node.js
 npm (Node Package Manager)
 Git
 Clone the repository:
-bash
-Copy code
 git clone https://github.com/Mahtot/Travel-tour-website.git
+
 Navigate to the project directory:
 bash
 Copy code
