@@ -1,4 +1,3 @@
-import { useContext, useState, useEffect } from "react";
 import tourPackages from "../tourPackages.json";
 import ImageBox from "../components/ImageBox";
 import Footer from "../components/Footer";
