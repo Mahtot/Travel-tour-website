@@ -24,19 +24,13 @@ Clone the repository:
 git clone https://github.com/Mahtot/Travel-tour-website.git<br>
 
 Navigate to the project directory:<br>
-bash
-Copy code
 cd Travel-tour-website<br>
 Install dependencies:<br>
 
-bash
-Copy code
 npm install
+
 Running the Project
 Start the development server:
-
-bash
-Copy code
 npm run dev
 Open your browser and navigate to:<br>
 http://localhost:3000
