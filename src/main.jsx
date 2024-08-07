@@ -13,6 +13,7 @@ import Detail from './pages/Detail.jsx'
 import {ApiProvider} from './context/ApiContext.jsx';
 import Book from './pages/Book.jsx'
 import Search from './pages/Search.jsx'
+import SavedPackages from './pages/SavedPackages.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -28,6 +29,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/view-details" element={<Detail/>}/>
         <Route path="/book-package" element={<Book/>}/>
         <Route path='/search' element={<Search/>} />
+        <Route path='/saved-packages' element={<SavedPackages/>} />
+
       </Routes>
     </ApiProvider>
   </BrowserRouter>,

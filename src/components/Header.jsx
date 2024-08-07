@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
-import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaGithub, FaUserAlt } from "react-icons/fa";
 import { NavLink,  useLocation, useNavigate } from "react-router-dom";
 import Select from "react-select";
 import { RiCloseLine } from "react-icons/ri";
@@ -8,8 +8,11 @@ import { SlMenu } from "react-icons/sl";
 import logo from "../assets/imgs/logo.png";
 import { CiSearch } from "react-icons/ci";
 import "../assets/css/style.css";
+import { ApiContext } from "../context/ApiContext";
 
 function Header() {
+  const {user, logout} = useContext(ApiContext)   //fetch user details
+
   const menuItems = [
     { name: "Home", path: "/" },
     { name: "Contact", path: "/contact" },
@@ -26,12 +29,14 @@ function Header() {
     
   ];
 
-  const [menuOpen, setIsMenuOpen] = useState(false);
+  const [menuOpen, setIsMenuOpen] = useState(false); // state for navigation menu
+  const [userMenuOpen, setUserMenuOpen] = useState(false); //  state for user menu
   const [selectedPackage, setSelectedPackage] = useState('');
   const [isScrolled, setIsScrolled] = useState(false);
   const navigateTo = useNavigate(); // Initialize navigate
 
-// To check is tour-packages is active 
+
+// To check if tour-packages is active 
   function isTourPackagesActive(pathname) {
     return pathname.startsWith('/tour-packages') || pathname === '/view-details' || pathname === '/book-package' ||pathname === '/search';
   }
@@ -77,6 +82,11 @@ function Header() {
 
   };
 
+  // function to handle when a user icon is clicked
+  const handleUserClick = () => {
+    setUserMenuOpen((prev) => !prev);
+  };
+
   // outside click will close the sidebar in mobile screens
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -105,6 +115,10 @@ function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+
+
+ 
 
   return (
     <div className="flex flex-col">
@@ -142,11 +156,31 @@ function Header() {
             value={selectedPackage.label}
             onChange={handleTourChange}
             className="text-[14px] sm:text-[16px]"
-            // placeholder={<div className="flex items-center gap-2"><CiSearch /> Destination</div>}
+            placeholder={<div className="flex items-center gap-2"><CiSearch /> Destination</div>}
           
           />
         </div>
 
+        <div className={`1097:hidden ${menuOpen ? 'hidden' : 'block'}`}>
+          {user && (
+              <div className="relative">
+                <FaUserAlt size={'1.5rem'} className="cursor-pointer text-[#FC6C22]" onClick={handleUserClick} />
+                {userMenuOpen && (
+                  <div className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20 user-menu">
+                    <NavLink to="/saved-packages" className="block px-4 py-2 text-gray-800 hover:bg-[#264F0B] hover:text-white">
+                       Favorite Packages
+                    </NavLink>
+                    <button
+                      onClick={logout}
+                      className="w-full text-left block px-4 py-2 text-gray-800 hover:bg-bg-[#264F0B] hover:text-white"
+                    >
+                      Log out
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
+        </div>
         <div className={`1097:hidden ${menuOpen ? 'hidden' : 'block'}`} onClick={handleMenu}>
           <SlMenu size={'1.5rem'} className="text-[#264F0B] cursor-pointer" />
         </div>
@@ -158,6 +192,23 @@ function Header() {
             <RiCloseLine className="text-[#264F0B] hover:scale-110 hover:transition-all fixed top-4 right-[20px]" size={'2rem'} />
           </div>
           {menuItems.map((item, index) => (
+
+            index==3 && user?  <div className="hidden 1097:inline-flex text-[#FC6C22] " onClick={handleUserClick}><FaUserAlt className="cursor-pointer "  />
+             {userMenuOpen && (
+                  <div className="grid fixed right-0 mt-[40px] py-2 w-48 bg-white rounded-md shadow-xl user-menu z-50">
+                    <NavLink to="/saved-packages" className="block px-4 py-2 text-gray-800 hover:bg-[#264F0B] hover:text-white">
+                      Favorite Packages
+                    </NavLink>
+                    <button
+                      onClick={logout}
+                      className="w-full text-left block px-4 py-2 text-gray-800 hover:bg-[#264F0B] hover:text-white"
+                    >
+                      Log out
+                    </button>
+                  </div>
+                )}
+            </div>
+            :
             <NavLink
               to={item.path}
               key={index}
@@ -170,7 +221,9 @@ function Header() {
               }
             >
               <div className="hover:text-[#FC6C22] hover:transition-all p-2 text-left w-[200px] 1097:w-auto">
+                
                 {item.name}
+                
               </div>
             </NavLink>
           ))}
