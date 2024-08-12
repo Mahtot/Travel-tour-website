@@ -44,14 +44,20 @@ function Detail() {
 
   useEffect(() => {
     setImgUrl(packageDetails.imgUrl);
-  }, [packageDetails.imgUrl]);
+    const savedPackages = JSON.parse(localStorage.getItem("savedPackages")) || [];
+    setSavePkg(savedPackages.includes(packageDetails.id));
+  }, [packageDetails.imgUrl, packageDetails.id]);
 
   const handleStarClick = () => {
     setSavePkg(prevValue => !prevValue);
     if (!savePkg) {
       savePackage(packageDetails);
+      const updatedSavedPackages = [...JSON.parse(localStorage.getItem("savedPackages")) || [], packageDetails.id];
+      localStorage.setItem("savedPackages", JSON.stringify(updatedSavedPackages));
     } else {
       removeSavedPackage(packageDetails.id);
+      const updatedSavedPackages = JSON.parse(localStorage.getItem("savedPackages")).filter(id => id !== packageDetails.id);
+      localStorage.setItem("savedPackages", JSON.stringify(updatedSavedPackages));
     }
   };
 

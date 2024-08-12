@@ -4,8 +4,8 @@ import carImg from "../assets/imgs/aboutus.jpeg"
 import ImageBox from "../components/ImageBox"
 import { useState, useEffect } from "react"
 import coffeeImg from "../assets/imgs/coffee.jpg";
-// import ethVideo from "/eth.mp4";
-import ethVideo from "../assets/video/ethiopia-cinematic-travel-film-travelxp.mp4";
+import ethVideo from "/eth.mp4";
+// import ethVideo from "../assets/video/ethiopia-cinematic-travel-film-travelxp.mp4";
 
 import ReactPlayer from "react-player"
 import cbeLogo from "../assets/imgs/cbe Logo.svg"
